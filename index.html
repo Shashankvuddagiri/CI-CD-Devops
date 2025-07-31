@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wavy Login & Sign up</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="wave-container">
+    <svg class="wave" viewBox="0 0 1440 320">
+      <path fill="#6c63ff" fill-opacity="1" d="M0,192L60,170.7C120,149,240,107,360,101.3C480,96,600,128,720,144C840,160,960,160,1080,154.7C1200,149,1320,139,1380,133.3L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <div class="form-container">
+    <div class="toggle-buttons">
+      <button id="loginToggle" class="active">Login</button>
+      <button id="signupToggle">Sign up</button>
+    </div>
+
+    <form id="loginForm" class="form active">
+      <h2>Login</h2>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="submit-btn">Login</button>
+    </form>
+
+    <form id="signupForm" class="form">
+      <h2>Sign up</h2>
+      <div class="input-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" required />
+      </div>
+      <div class="input-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+      </div>
+      <button type="submit" class="submit-btn">Signup</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
